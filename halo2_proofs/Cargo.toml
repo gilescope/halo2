@@ -53,8 +53,8 @@ ff = "0.13"
 group = "0.13"
 halo2curves = { version = "0.6.0", default-features = false }
 rand_core = { version = "0.6", default-features = false }
-tracing = "0.1"
-blake2b_simd = "1" # MSRV 1.66.0
+tracing = { version = "0.1", default-features = false, features = ["attributes"] }
+blake2b_simd = { version = "1", default-features = false } # MSRV 1.66.0
 sha3 = "0.9.1"
 rand_chacha = "0.3"
 serde = { version = "1", optional = true, features = ["derive"] }
